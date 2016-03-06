@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+build.sh
+target/
+.springBeans
+.DS_STORE
+.idea/
+indexer.iml
+/bin/

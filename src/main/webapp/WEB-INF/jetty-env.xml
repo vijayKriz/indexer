@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <New id="kouponifyDS" class="org.eclipse.jetty.plus.jndi.Resource">
+     <Arg></Arg>
+     <Arg>jdbc/kouponifyDB</Arg>
+     <Arg>
+        <New class="org.apache.commons.dbcp.BasicDataSource">
+           <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+           <Set name="url">jdbc:mysql://localhost:3306/kouponify?allowMultiQueries=true</Set>
+           <Set name="username">root</Set>
+           <Set name="password"></Set>
+            <Set name="initialSize">5</Set>
+            <Set name="maxActive">55</Set>
+            <Set name="maxIdle">21</Set>
+            <Set name="minIdle">13</Set>
+            <Set name="timeBetweenEvictionRunsMillis">34000</Set>
+            <Set name="minEvictableIdleTimeMillis">55000</Set>
+            <Set name="validationQuery">SELECT 1</Set>
+            <Set name="testOnBorrow">true</Set>
+            <Set name="removeAbandoned">true</Set>
+            <Set name="removeAbandonedTimeout">233</Set>
+        </New>
+     </Arg>
+  </New>
+</Configure>
