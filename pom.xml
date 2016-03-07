@@ -4,7 +4,7 @@
     <groupId>com.rest.indexer</groupId>
     <artifactId>indexer</artifactId>
     <packaging>war</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <name>Indexer services Webapp</name>
     <url>http://maven.apache.org</url>
 
@@ -80,12 +80,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>1.8.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>${org_json_version}</version>
@@ -151,29 +145,6 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- MySQL JDBC connector -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.27</version>
-        </dependency>
-
         <!-- Jersey-client -->
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
@@ -181,22 +152,6 @@
             <version>${jersey.version}</version>
         </dependency>
 
-        <!-- Spring security -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-            <version>${spring.security.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>${spring.security.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-            <version>${spring.security.version}</version>
-        </dependency>
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -218,16 +173,6 @@
             <artifactId>swagger-jersey2-jaxrs_2.10</artifactId>
             <version>${swagger.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.apache.spark</groupId>-->
-            <!--<artifactId>spark-core_2.10</artifactId>-->
-            <!--<version>1.4.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.spark</groupId>-->
-            <!--<artifactId>spark-sql_2.10</artifactId>-->
-            <!--<version>1.4.0</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 

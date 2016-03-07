@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by vijay on 2/15/16.
@@ -21,7 +22,7 @@ public class Scrub{
 
     private static final long serialVersionUID = -1284654508625552327L;
 
-    private Object[] rows_parsed;
+    private List<String[]> rows_parsed;
 
     private Object aggregations;
 
